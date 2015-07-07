@@ -1,0 +1,34 @@
+<alerts></alerts>
+<div class="col-md-12 margin-bottom-50">
+    <form ng-submit="submit()">
+        <div class="form-group">
+            <div class="col-md-6">
+                <label for="name">Name</label>
+                <input id="name" required type="text" ng-model="airport.name" class="form-control"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-6">
+                <label for="tz">Tz</label>
+                <input id="tz" type="text" ng-model="airport.tz" class="form-control"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-6">
+                <label for="lat">Lat</label>
+                <input id="lat" type="text" ng-model="airport.lat" class="form-control"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-6 margin-bottom-50">
+                <label for="lon">Lon</label>
+                <input id="lon" type="text" ng-model="airport.lon" class="form-control"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-2 col-md-offset-5">
+                <button class="btn btn-success btn-block">Save</button>
+            </div>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,42 @@
+
+<alerts></alerts>
+<div class="col-md-12 margin-bottom-50" ng-controller="SearchCtrl">
+    <form ng-submit="submit()">
+        <div class="form-group">
+            <div class="col-md-10">
+                <input placeholder="Please enter 3-digit code to find airport" type="text" ng-model="q" class="form-control"/>
+            </div>
+            <div class="col-md-2">
+                <button type="submit" class="btn btn-sucess">Search</button>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="col md-12">
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th>Search</th>
+            <th>Name</th>
+            <th>Latitude</th>
+            <th>Longitude</th>
+            <th>Time Zone</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="(key,val) in airports">
+            <td scope="row">{{key}}</td>
+            <td>{{val.name}}</td>
+            <td>{{val.lat}}</td>
+            <td>{{val.lon}}</td>
+            <td>{{val.tz}}</td>
+            <td>
+                <a class="btn btn-info" href="#/edit/{{key}}">Edit</a>
+                <a class="btn btn-danger" ng-click="delete(key)">Delete</a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
