@@ -1,4 +1,6 @@
 # IATA
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/shmuga/IATA.svg)](https://greenkeeper.io/)
 Service for receiving information about airport based on IATA code.
 
 #INSTALLATION 
